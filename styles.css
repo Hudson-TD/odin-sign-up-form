@@ -1,51 +1,16 @@
 *,
 *::before,
 *::after {
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+}
+:root {
+  --default-margin: 55px;
 }
 
 body {
   display: flex;
-}
-
-.header-text {
-  text-align: center;
-}
-
-h2{
-    margin-left: 50px;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background-color: whitesmoke;
-}
-
-.signup-form-container {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 100%;
-  padding: 30px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-}
-
-.signup-form-body {
-  display: flex;
-  margin-left: 30px;
-  gap: 50px;
-}
-
-fieldset {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  gap: 20px;
-  border: 0;
 }
 
 .hero-container {
@@ -60,10 +25,99 @@ fieldset {
 .image-credits {
   color: white;
   position: absolute;
-  left: 0;
-  bottom: 1;
+  left: 5px;
+  bottom: 10px;
 }
 
 .image-credits a {
   color: white;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex: 1;
+  font-size: 1rem;
+  margin-top: 50px;
+}
+
+h2,
+h3 {
+  margin-left: var(--default-margin);
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.signup-form-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  padding: 30px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-header-text {
+  padding: 0px 0px 25px 0px;
+  font-size: 1.75rem;
+}
+
+.signup-form-body {
+  display: flex;
+  margin-left: var(--default-margin);
+  gap: 50px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  gap: 20px;
+}
+
+input {
+  height: 1.75rem;
+  width: 250px;
+  border-radius: 6px;
+}
+
+.adjacent-submit-section {
+  flex: 1;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+button {
+  padding: 20px;
+  width: 225px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  background-color: #86b6ff;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.adjacent-submit-section a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #86b6ff;
+  cursor: pointer;
 }
