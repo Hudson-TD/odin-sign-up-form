@@ -1,0 +1,41 @@
+body {
+  display: flex;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form-container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.signup-form-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.hero-container {
+  position: relative;
+}
+
+.hero-image {
+  width: 40vw;
+  height: 100vh;
+}
+
+.image-credits {
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 1;
+}
+
+.image-credits a {
+  color: white;
+}

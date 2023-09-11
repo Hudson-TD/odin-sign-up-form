@@ -7,6 +7,75 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <section class="hero-container">
+      <img
+        class="hero-image"
+        src="./public/mads-schmidt-rasmussen-xfngap_DToE-unsplash.jpg"
+      />
+      <span class="image-credits"
+        >Photo by
+        <a
+          href="https://unsplash.com/@mvds?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Mads Schmidt Rasmussen</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/xfngap_DToE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </span>
+    </section>
+    <main>
+      <div>
+        <h1>
+          Quote container: Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Reiciendis natus nihil, totam optio quasi blanditiis odio ad in.
+          Perferendis facere ratione sed nesciunt vero deleniti rem? Sed odio
+          officia neque?
+        </h1>
+      </div>
+      <div class="signup-form-container">
+        <form
+          class="signup-form-body"
+          action="https://httpbin.org/post"
+          method="post"
+        >
+          <h1>Let's do this!</h1>
+          <fieldset>
+            <label for="first-name">*First Name</label>
+            <input type="text" id="first-name" name="first-name" required />
+            <label for="last-name">*Last Name</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </fieldset>
+          <fieldset>
+            <label for="user-email">*Email</label>
+            <input type="email" id="user-email" name="user-email" required />
+            <label for="user-phone">*Phone Number</label>
+            <input type="number" id="user-phone" name="user-phone" required />
+          </fieldset>
+          <fieldset>
+            <label for="user-password">*Password</label>
+            <input
+              type="password"
+              id="user-password"
+              name="user-password"
+              required
+            />
+            <label for="confirm-password">*Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+          </fieldset>
+        </form>
+      </div>
+      <div>
+        <button type="submit">Create Account</button>
+        <h3>Already have an account? <a>Log in</a></h3>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
