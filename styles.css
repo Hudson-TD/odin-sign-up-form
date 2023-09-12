@@ -133,3 +133,7 @@ button {
 input:focus {
   border-color: #86b6ff;
 }
+
+.password-requirements {
+  margin-left: 20px;
+}
