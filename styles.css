@@ -91,7 +91,15 @@ fieldset {
 input {
   height: 1.75rem;
   width: 250px;
+  outline: none;
+  border: 2px solid black;
   border-radius: 6px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #86b6ff;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 .adjacent-submit-section {
@@ -120,4 +128,8 @@ button {
   text-decoration: none;
   color: #86b6ff;
   cursor: pointer;
+}
+
+input:focus {
+  border-color: #86b6ff;
 }
