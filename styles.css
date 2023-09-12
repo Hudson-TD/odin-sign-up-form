@@ -13,6 +13,10 @@ body {
   display: flex;
 }
 
+section {
+  position: relative;
+}
+
 .hero-container {
   position: relative;
 }
@@ -20,6 +24,11 @@ body {
 .hero-image {
   width: 40vw;
   height: 100vh;
+}
+
+.icon-image {
+  width: 200px;
+  height: 200px;
 }
 
 .image-credits {
